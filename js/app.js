@@ -1,67 +1,82 @@
-// // some conditionals!!
-
-// let answer1 = confirm("ArRE YOU READY TO RUMMMMMBLLEE!!!");
-// // = (assignment operator)
-// // == (only check value - equality checking)
-// // === (check value and data type - equality checking )
-
-// if (answer1 === true) {
-//   console.log('YOU"RE READY TO RUMBLE!!');
-// } else {
-//   console.log("You have no power here!");
-// }
-
-// console.log(answer1);
-
-// console.log(answer1)
-
-// let first = false;
-// let second = false;
-// let third = false;
-
-// if (first && third) {
-//     console.log('first and third were both true!')
-// } else if (first || second) {
-//     console.log('The first or second was true!')
-// } else if (third) {
-//     console.log('first and second were false, but the third is true')
-// } else {
-//     console.log('IS anything real??/!')
-// }
-let answer1 = confirm(
+let film = prompt(
   "Hope you've been paying attention! So tell me, Is Patrick's favourite film Forbidden Planet?"
 );
-if (answer1 === true) {
-  console.log("Robot is too small.");
-} else {
-  console.log("*Giant robot punching noises*");
-}
-
-let dotalol = prompt("Now tell me does Patrick prefer DOTA or LoL?");
-
-console.log(dotalol);
-console.log(dotalol.toLowerCase());
-
-switch (dotalol()) {
-  case "DOTA":
-    console.log("You can't deny!");
+console.log(film);
+console.log(film.toLowerCase());
+switch (film.toLowerCase()) {
+  case "YES":
+    console.log("That's wrong, the robot in Forbidden Planet is very small");
     break;
-  case "LoL":
-    console.log("You actually can't deny in this game.");
+  case "NO":
+    console.log(
+      "That's right, Pacific Rim is Patrick's favourite film and features very big robots"
+    );
+    break;
+  default:
+    console.log(
+      "You should give a yes or no answer to this question about Patrick's favourite film"
+    );
 }
 
-// let color = prompt('What is your favorite colour?')
+let cat = prompt("Does Patrick have a cat?");
+console.log(cat);
+console.log(cat.toLowerCase());
+switch (cat.toLowerCase()) {
+  case "YES":
+    console.log("That's right, the cat is called Goblin");
+    break;
+  case "NO":
+    console.log("That's wrong, Patrick does have a cat");
+    break;
+  default:
+    console.log(
+      "You should give a yes or no answer to this question about Patrick owning a cat"
+    );
+}
 
-// console.log(color);
-// console.log(color.toLowerCase())
+let cthulhu = prompt("Is Call of Cthulhu set in the 1930's?");
+console.log(cthulhu);
+console.log(cthulhu.toLowerCase());
+switch (cthulhu.toLowerCase()) {
+  case "YES":
+    console.log("Close, Call of Cthulhu in the 1920's");
+    break;
+  case "NO":
+    console.log("That's right, Call of Cthulhu is set in the 1920's");
+    break;
+  default:
+    console.log(
+      "You should give a yes or no answer to this question about when Call of Cthulhu was set"
+    );
+}
 
-// switch (color.toLowerCase()) {
-//     case 'x':
-//     case 'red':
-//         console.log('Your favorite color was red!');
-//         break;
-//     case 'blue':
-//         console.log('Your favorite color was blue!');
-//         break;
-//     default:
-//         console.log(`I don't know what kind of weird color you've picked ¯\\_(ツ)_/¯`)
+let favouriteColour = prompt("Is Patrick's favourite colour green?");
+console.log(favouriteColour);
+console.log(favouriteColour.toLowerCase());
+switch (favouriteColour.toLowerCase()) {
+  case "YES":
+    console.log("That's right, Green is Patrick's favourite colour");
+    break;
+  case "NO":
+    console.log("Sorry, green really is Patrick's favourite colour");
+    break;
+  default:
+    console.log(
+      "You should give a a yes or no answer to this question about favourite colour"
+    );
+}
+let dotaLol = prompt("Does Patrick play DOTA?");
+console.log(dotaLol);
+console.log(dotaLol.toLowerCase());
+switch (dotaLol.toLowerCase()) {
+  case "YES":
+    console.log("That's right, Patrick plays DOTA");
+    break;
+  case "NO":
+    console.log("Sorry you're wrong, Patrick plays DOTA");
+    break;
+  default:
+    console.log(
+      "You should give a a yes or no answer to this question about DOTA"
+    );
+}
