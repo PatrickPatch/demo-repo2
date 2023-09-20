@@ -115,3 +115,25 @@ function quiz() {
       alert("You should give a a yes or no answer to this question about DOTA");
   }
 }
+
+let numberG = prompt("Guess the number!");
+for (let guessesUsed = 0; guessesUsed < 3; guessesUsed++) {
+  console.log(guessesUsed);
+  console.log(numberG);
+  if (numberG == 10) {
+    alert("Bingo! You guessed the right number!");
+    break;
+  } else if (numberG > 10) {
+    alert("Sorry that's too high!");
+    numberG = prompt("Guess the number!");
+  } else if (numberG < 10) {
+    alert("Sorry that's too low!");
+    numberG = prompt("Guess the number!");
+  } else {
+    alert("Try a numeric number");
+    numberG = prompt("Guess the number!");
+  }
+}
+if ((GuessesUsed) => 4) {
+  alert("Sorry, you are out of attempts! The correct answer is 10!");
+}
