@@ -5,7 +5,9 @@ alert(
     "! Pay attention, there will be a quiz..."
 );
 
-function quiz() {
+//function quiz() {
+
+function getFilm() {
   let film = prompt(
     "Hope you've been paying attention! So tell me, Is Patrick's favourite film Forbidden Planet?"
   );
@@ -32,7 +34,9 @@ function quiz() {
         "You should give a yes or no answer to this question about Patrick's favourite film"
       );
   }
+}
 
+function getCat() {
   let cat = prompt("Does Patrick have a cat?");
   console.log(cat);
   console.log(cat.toLowerCase());
@@ -54,7 +58,9 @@ function quiz() {
         "You should give a yes or no answer to this question about Patrick owning a cat"
       );
   }
+}
 
+function getCall() {
   let cthulhu = prompt("Is Call of Cthulhu set in the 1930's?");
   console.log(cthulhu);
   console.log(cthulhu.toLowerCase());
@@ -75,7 +81,8 @@ function quiz() {
         "You should give a yes or no answer to this question about when Call of Cthulhu was set"
       );
   }
-
+}
+function getColour() {
   let favouriteColour = prompt("Is Patrick's favourite colour green?");
   console.log(favouriteColour);
   console.log(favouriteColour.toLowerCase());
@@ -96,6 +103,9 @@ function quiz() {
         "You should give a a yes or no answer to this question about favourite colour"
       );
   }
+}
+
+function getDota() {
   let dotaLol = prompt("Does Patrick play DOTA?");
   console.log(dotaLol);
   console.log(dotaLol.toLowerCase());
@@ -115,6 +125,7 @@ function quiz() {
       alert("You should give a a yes or no answer to this question about DOTA");
   }
 }
+//}
 
 let numberG = prompt("Guess the number!");
 for (let guessesUsed = 0; guessesUsed < 3; guessesUsed++) {
