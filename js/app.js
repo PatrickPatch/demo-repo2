@@ -148,3 +148,8 @@ for (let guessesUsed = 0; guessesUsed < 3; guessesUsed++) {
 if ((GuessesUsed) => 4) {
   alert("Sorry, you are out of attempts! The correct answer is 10!");
 }
+getFilm();
+getCall();
+getCat();
+getColour();
+getDota();
